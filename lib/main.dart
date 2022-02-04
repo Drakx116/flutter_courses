@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_courses/common/widgets/NumberButton.dart';
+import 'package:flutter_courses/common/widgets/buttons/NumberButton.dart';
 
 void main() {
   runApp(const MyApp());
@@ -59,6 +59,20 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Text(_display, style: const TextStyle(
                     fontSize: 24
                   )),
+                ),
+                Padding(
+                    padding: EdgeInsets.all(8),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        FloatingActionButton(
+                          onPressed: () { return;
+
+                          },
+                          child: const Text('OK'),
+                        )
+                      ],
+                    ),
                 ),
                 Padding(
                     padding: const EdgeInsets.only(top: 8, bottom: 8),
